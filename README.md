@@ -7,7 +7,7 @@ Options                        |
 |------------------------|---------------------|
 ---------------------------------|
 | nickname               | string              | null: false
-| email                  | string              | null: false
+| email                  | string              | unique: true
 | encrypted_password     | string              | null: false
 | first_name             | string              | null: false
 | first_name_kana        | string              | null: false
@@ -17,9 +17,9 @@ Options                        |
 
 ### association
 
-* has_many :products dependent: :destroy
-* belongs_to :destination dependent: :destroy
-* has_many :card dependent: :destroy
+* has_many :products
+* has_many :purchase record
+* has_one :destination
 
 ## products table
 
@@ -30,21 +30,19 @@ Options                        |
 | name                   |string               |null: false
 | price                  |integer              |null: false
 | description            |text                 |null: false
-| status_id              |integer              |null: false
 | cost_id                |integer              |null: false
-| days_id                |integer              |null: false
+| shipment_id            |integer              |null: false
 | item_condition_id      |integer              |null: false
 | prefecture_id          |integer              |null: false
 | category_id            |integer              |null: false,foreign_key:true
-| user_id                |references           |null: false,foreign_key:true
+| user                |references           |null: false,foreign_key:true
 
 ### association
 
-* belongs_to:user dependent: :destroy
-* belongs_to:category dependent: :destroy
-* has_many :images dependent: :destroy
-* belongs_to_active_hash :prefecture
-* has_many :card dependent: :destroy
+* belongs_to :user 
+* belongs_to :category 
+* has_one : purchase records
+* has_one : destination
 
 ## destinations table
 
@@ -59,23 +57,28 @@ Options                        |
 | building_name          |string               |
 | phone_number           |string               |null: false
 | user_id                |integer              |null: false
-
+| product_id            |integer              |null: false
 ### association
 
-* has_many :card dependent: :destroy
+* belongs_to :purchase record
+* belongs_to :product
+* belongs_to :user
 
-## cards table
+## Purchase records table
 
 | Column                 | Type                |
 Options                        |
 |------------------------|---------------------|
 ---------------------------------|
 | user_id                |integer              |null: false,foreign_key:true
-| customer_id            |string               |null: false
+| product_id            |integer              |null: false,
+foreign_key:true
 
 ### association
 
 * belongs_to :user
+* belongs_to :product
+* has_one :destination
 
 ## category table
 | Column                 | Type                |
