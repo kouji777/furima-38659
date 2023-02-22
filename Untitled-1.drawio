@@ -17,10 +17,7 @@
                     <mxGeometry y="60" width="70" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="encrypted_&lt;br&gt;password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="2" vertex="1">
-                    <mxGeometry x="5" y="90" width="130" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="7" value="user_image" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="2" vertex="1">
-                    <mxGeometry y="140" width="130" height="40" as="geometry"/>
+                    <mxGeometry y="100" width="130" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="8" value="first_name" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="2" vertex="1">
                     <mxGeometry y="170" width="130" height="40" as="geometry"/>
@@ -38,7 +35,7 @@
                     <mxGeometry y="290" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="product" style="swimlane;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" parent="1" vertex="1">
-                    <mxGeometry y="584" width="390" height="350" as="geometry"/>
+                    <mxGeometry y="584" width="390" height="316" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" value="name" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="14" vertex="1">
                     <mxGeometry y="30" width="70" height="40" as="geometry"/>
@@ -61,11 +58,8 @@
                 <mxCell id="23" value="prefecture_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="14" vertex="1">
                     <mxGeometry y="230" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" value="category_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="14" vertex="1">
-                    <mxGeometry y="270" width="140" height="40" as="geometry"/>
-                </mxCell>
                 <mxCell id="25" value="user" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="14" vertex="1">
-                    <mxGeometry y="310" width="70" height="40" as="geometry"/>
+                    <mxGeometry y="270" width="70" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="64" style="edgeStyle=none;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;strokeWidth=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;startSize=27;endSize=35;targetPerimeterSpacing=0;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -74,13 +68,13 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="43" value="distination" style="swimlane;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" parent="1" vertex="1">
-                    <mxGeometry x="580" y="45" width="250" height="320" as="geometry"/>
+                    <mxGeometry x="580" y="45" width="250" height="285" as="geometry"/>
                 </mxCell>
                 <mxCell id="48" value="post_code" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="43" vertex="1">
                     <mxGeometry x="-5" y="25" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="49" value="prefecture" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="43" vertex="1">
-                    <mxGeometry x="-5" y="55" width="130" height="40" as="geometry"/>
+                <mxCell id="49" value="prefecture_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="43" vertex="1">
+                    <mxGeometry x="-5" y="55" width="160" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="50" value="city" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="43" vertex="1">
                     <mxGeometry x="-5" y="95" width="60" height="40" as="geometry"/>
@@ -94,20 +88,8 @@
                 <mxCell id="53" value="phone_number" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="43" vertex="1">
                     <mxGeometry x="-10" y="195" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="54" value="user_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="43" vertex="1">
-                    <mxGeometry x="-5" y="235" width="90" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="116" value="product_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="43">
-                    <mxGeometry x="-10" y="265" width="130" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="58" value="category" style="swimlane;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" parent="1" vertex="1">
-                    <mxGeometry x="580" y="800" width="220" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="59" value="name" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="58" vertex="1">
-                    <mxGeometry y="30" width="70" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="60" value="ancestry" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="58" vertex="1">
-                    <mxGeometry y="60" width="110" height="40" as="geometry"/>
+                <mxCell id="116" value="purchase_record" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="43">
+                    <mxGeometry x="-5" y="235" width="190" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="63" style="edgeStyle=none;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;strokeWidth=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;startSize=27;endSize=35;targetPerimeterSpacing=0;entryX=0.521;entryY=0.053;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="43" edge="1" target="97">
                     <mxGeometry relative="1" as="geometry">
@@ -115,22 +97,17 @@
                         <mxPoint x="450" y="370" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="66" style="edgeStyle=none;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;strokeWidth=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;startSize=27;endSize=35;targetPerimeterSpacing=0;" parent="1" source="60" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="390" y="880" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
                 <mxCell id="97" value="Purchase record" style="swimlane;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
                     <mxGeometry x="580" y="520" width="240" height="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="100" value="product_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="97">
-                    <mxGeometry y="80" width="130" height="40" as="geometry"/>
+                <mxCell id="100" value="product" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="97">
+                    <mxGeometry y="80" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="98" value="user_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="97">
-                    <mxGeometry y="40" width="90" height="40" as="geometry"/>
+                <mxCell id="98" value="user" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="97">
+                    <mxGeometry y="45" width="70" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="99" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
-                    <mxGeometry x="630" y="555" width="20" height="30" as="geometry"/>
+                <mxCell id="99" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12px; line-height: 18px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="97">
+                    <mxGeometry x="40" y="35" width="20" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="114" style="edgeStyle=none;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeWidth=1;rounded=0;targetPerimeterSpacing=0;endSize=35;startSize=27;" edge="1" parent="1">
                     <mxGeometry relative="1" as="geometry">
