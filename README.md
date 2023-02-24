@@ -16,7 +16,7 @@
 ### association
 
 * has_many :products
-* has_many :purchase_record
+* has_many :purchase_records
 
 ## products table
 
@@ -25,6 +25,7 @@
 | name            | string            | null: false  |
 | price           | integer           | null: false  |
 | description     | text              | null: false  |
+| category_id     | integer           | null: false  |
 | cost_id         | integer           | null: false  |
 | shipment_id     | integer           | null: false  |
 | item_condition_id | integer         | null: false  |
@@ -34,7 +35,7 @@
 ### association
 
 * belongs_to :user 
-* has_one : purchase record
+* has_one : purchase_records
 
 ## destinations table
 
@@ -46,11 +47,10 @@
 | address         | string            | null: false  |
 | building_name   | string            |
 | phone_number    | string            | null: false  |
-| purchase_record | references        | null: false  |
+| purchase_record | references        | null: false,foreign_key:true  |
 ### association
 
-* belongs_to :purchase record
-* belongs_to :user
+* belongs_to :purchase_record
 
 ## purchase_records table
 
