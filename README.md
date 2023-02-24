@@ -35,7 +35,7 @@
 ### association
 
 * belongs_to :user 
-* has_one : purchase_records
+* has_one : purchase_record
 
 ## destinations table
 
