@@ -1,4 +1,4 @@
-class ItemCondition < ActiveHash::Base
+class ItemConditions < ActiveHash::Base
   self.data = [
     { id: 0, name: '--' },
     { id: 1, name: '新品、未使用' },
@@ -10,5 +10,5 @@ class ItemCondition < ActiveHash::Base
   ]
 
   include ActiveHash::Associations
-  has_many :products
+  has_many :items
 end

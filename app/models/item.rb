@@ -1,9 +1,9 @@
-class Product < ApplicationRecord
+class Item < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
 
   # テーブルとのアソシエーション
-  * belongs_to :user 
-  * has_one : purchase_record
+  belongs_to :user
+  has_one :purchase_record
   # has_many :comments
 
   # アクティブハッシュとのアソシエーション
