@@ -28,7 +28,7 @@ class Item < ApplicationRecord
     validates :shipment_id
     # 300円以上かつ9,999,999円以下で、半角数字かつ整数値のみでないと入力不可
     validates :price, numericality: {only_integer:true,greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 }
-    validates :price, format: { with: /\A[0-9]+\z/ } 
+  
   end
 
   # ジャンルの選択が「--」の時は保存不可
