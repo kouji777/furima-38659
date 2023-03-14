@@ -17,4 +17,8 @@ class PurchaseRecordsController < ApplicationController
     end
   end
 
+  def purchase_record_params
+    params.require(:purchase_record_form).permit(:postcode, :prefecture_id, :city, :block, :building, :phone_number).merge(user_id: current_user.id, item_id: params[:item_id])
+  end
+
 end
