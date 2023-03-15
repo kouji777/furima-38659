@@ -3,7 +3,7 @@ class Item < ApplicationRecord
 
   # テーブルとのアソシエーション
   belongs_to :user
-  has_one :purchase_record
+  #has_one :purchase_record
   # has_many :comments
 
   # アクティブハッシュとのアソシエーション

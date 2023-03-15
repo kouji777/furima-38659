@@ -1,5 +1,5 @@
-class PurchaseRecord < ApplicationRecord
-  belongs_to :user
-  belongs_to :item
-  has_one_attached :image
-end
+#class PurchaseRecord < ApplicationRecord
+  #belongs_to :user
+  #belongs_to :item
+  #has_one_attached :image
+#end
