@@ -33,14 +33,13 @@ RSpec.describe Item, type: :model do
         @item.price = 300
         expect(@item).to be_valid
       end
-
     end
 
     context '出品ができないとき' do
       it 'ユーザー登録している人でないと出品できない' do
         @item.user_id = nil
         @item.valid?
-        expect(@item.errors.full_messages).to include("User must exist")
+        expect(@item.errors.full_messages).to include('User must exist')
       end
       it '１枚画像がないと出品できない' do
         @item.image = nil
@@ -75,7 +74,7 @@ RSpec.describe Item, type: :model do
       it '商品の状態の情報が空欄だと出品できない' do
         @item.item_condition_id = nil
         @item.valid?
-        expect(@item.errors.full_messages).to include("Item condition can't be blank",)
+        expect(@item.errors.full_messages).to include("Item condition can't be blank")
       end
       it '配送料の負担の情報が「---」だと出品できない' do
         @item.cost_id = 0
@@ -121,11 +120,11 @@ RSpec.describe Item, type: :model do
         @item.price = 10_000_000
         @item.valid?
         expect(@item.errors.full_messages).to include('Price must be less than or equal to 9999999')
-      end 
+      end
       it '価格が半角数値以外だと出品できない' do
         @item.price = 'ああああああ'
         @item.valid?
-        expect(@item.errors.full_messages).to include("Price is not a number")
+        expect(@item.errors.full_messages).to include('Price is not a number')
       end
     end
   end
