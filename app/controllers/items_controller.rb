@@ -5,7 +5,7 @@ class ItemsController < ApplicationController
   before_action :set_item, only: [:show]
   
   def index
-    @items = Item.includes(:user)
+    @items = Item.purchase_record('created_at DESC')
   end
 
   def new

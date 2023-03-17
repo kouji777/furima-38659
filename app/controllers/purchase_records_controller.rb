@@ -2,9 +2,9 @@ class PurchaseRecordsController < ApplicationController
   before_action :authenticate_user!
   before_action :non_purchased_item, only: [:index, :create]
 
-  def index
-    @purchase_record_form = PurchaseRecordForm.new
-  end
+  #def index
+    #@purchase_record_form = PurchaseRecordForm.new
+  #end
 
   def create
     @purchase_record_form = PurchaseRecordForm.new(purchase_record_params)
