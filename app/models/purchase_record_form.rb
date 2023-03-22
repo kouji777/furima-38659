@@ -1,4 +1,4 @@
-class PurchaseForm
+class PurchaseRecordForm
   include ActiveModel::Model
   attr_accessor :user_id, :item_id, :postcode, :prefecture_id, :city, :block, :building, :phone_number, :token
 
