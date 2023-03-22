@@ -8,6 +8,7 @@
 
    def create
      @purchase_record_form = PurchaseRecordForm.new(purchase_record_params)
+     binding.pry
      if @purchase_record_form.valid?
        pay_item
        @purchase_record_form.save
@@ -34,6 +35,6 @@
 
    def non_purchased_item
      @item = Item.find(params[:item_id])
-     redirect_to root_path if current_user.id == @item.user_id || @item.purchase_records.present?
+     redirect_to root_path if current_user.id == @item.user_id || @item.purchase_record.present?
    end
  end
