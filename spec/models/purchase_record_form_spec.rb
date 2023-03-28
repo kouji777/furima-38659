@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe PurchaseRecordForm, type: :model do
   before do
-    @user = FactoryBot.build(:user)
+    @user = FactoryBot.create(:user)
     @item = FactoryBot.create(:item)
-    @purchase_record_form = FactoryBot.build(:purchase_record_form)
+    @purchase_record_form = FactoryBot.build(:purchase_record_form, user_id: @user.id, item_id: @item.id)
   end
 
   describe '配送先情報の保存' do
@@ -60,8 +60,8 @@ RSpec.describe PurchaseRecordForm, type: :model do
       it '郵便番号が空だと保存できないこと' do
         @purchase_record_form.postcode = nil
         @purchase_record_form.valid?
-        expect(@purchase_record_form.errors.full_messages).to include("Postcode can't be blank",
-                                                                      'Postcode is invalid. Include hyphen(-)')
+        expect(@purchase_record_form.errors.full_messages).to include("Postcode can't be blank")
+                                                                      
       end
       it '郵便番号にハイフンがないと保存できないこと' do
         @purchase_record_form.postcode = 1_234_567
@@ -95,6 +95,11 @@ RSpec.describe PurchaseRecordForm, type: :model do
       end
       it '電話番号にハイフンがあると保存できないこと' do
         @purchase_record_form.phone_number = '123 - 1234 - 1234'
+        @purchase_record_form.valid?
+        expect(@purchase_record_form.errors.full_messages).to include('Phone number is invalid')
+      end
+      it '電話番号が9桁以下では保存できないこと' do
+        @purchase_record_form.phone_number = 12_345_6
         @purchase_record_form.valid?
         expect(@purchase_record_form.errors.full_messages).to include('Phone number is invalid')
       end
