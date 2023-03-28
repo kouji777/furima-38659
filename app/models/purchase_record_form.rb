@@ -19,6 +19,7 @@ class PurchaseRecordForm
   def save
     purchase_record = PurchaseRecord.create(user_id: user_id, item_id: item_id)
 
-    Payment.create(purchase_record_id: purchase_record.id, postcode: postcode, prefecture_id: prefecture_id, city: city, block: block, building: building, phone_number: phone_number)
+    Payment.create(purchase_record_id: purchase_record.id, postcode: postcode, prefecture_id: prefecture_id, city: city,
+                   block: block, building: building, phone_number: phone_number)
   end
 end
