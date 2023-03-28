@@ -3,7 +3,7 @@ class PurchaseRecordForm
   attr_accessor :user_id, :item_id, :postcode, :prefecture_id, :city, :block, :building, :phone_number, :token
 
   with_options presence: true do
-    # orderモデルのバリデーション
+    # purchaseモデルのバリデーション
     validates :user_id
     validates :item_id
     # paymentモデルのバリデーション
@@ -11,7 +11,7 @@ class PurchaseRecordForm
     validates :prefecture_id, numericality: { other_than: 0, message: "can't be blank" }
     validates :city
     validates :block
-    validates :phone_number, format: { with: /\A[0-9]{11}\z/, message: 'is invalid' }
+    validates :phone_number, format: { with: /\A[0-9]{10,11}\z/, message: 'is invalid' }
     # トークンのバリデーション
     validates :token
   end

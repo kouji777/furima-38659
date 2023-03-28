@@ -1,8 +1,7 @@
 class PurchaseRecordsController < ApplicationController
   before_action :authenticate_user!
-  before_action :non_purchased_item, only: [:index, :create,]
   before_action :set_furima, only: [:index, :create]
-
+  before_action :non_purchased_item, only: [:index, :create,]
   def index
     @purchase_record_form = PurchaseRecordForm.new
     
@@ -37,7 +36,6 @@ class PurchaseRecordsController < ApplicationController
   end
 
   def non_purchased_item
-    @item = Item.find(params[:item_id])
     redirect_to root_path if current_user.id == @item.user_id || @item.purchase_record.present?
   end
 

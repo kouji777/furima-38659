@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe PurchaseRecordForm, type: :model do
   before do
+    @user = FactoryBot.build(:user)
+    @item = FactoryBot.create(:item)
     @purchase_record_form = FactoryBot.build(:purchase_record_form)
   end
 
@@ -38,7 +40,7 @@ RSpec.describe PurchaseRecordForm, type: :model do
         @purchase_record_form.building = nil
         expect(@purchase_record_form).to be_valid
       end
-      it '電話番号が11番桁以内かつハイフンなしであれば保存できる' do
+      it '電話番号が10桁以上、11番桁以内半角数字かつハイフンなしであれば保存できる' do
         @purchase_record_form.phone_number = 12_345_678_910
         expect(@purchase_record_form).to be_valid
       end
