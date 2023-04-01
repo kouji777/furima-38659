@@ -26,10 +26,12 @@
 
   <%# ログイン中であれば,もしくは商品が売却済みであれば %> 
   <% if user_signed_in? || @item.purchase_record != nil%> 
-    <% if current_user.id == @item.user_id %> 
+    <% if current_user.id == @item.user_id && @item.purchase_record.nil? %> 
       <%= link_to '商品の編集', edit_item_path(@item), method: :get, class: "item-red-btn" %>
       <p class='or-text'>or</p>
       <%= link_to '削除', item_path(@item), method: :delete, class:'item-destroy' %>
+    <% elsif @item.purchase_record.present? %>
+     <%= link_to "SOLD OUT",item_path(@item),class:"disabled-button bold" %>
     <% else %>
      <%= link_to '購入画面に進む', item_purchase_records_path(@item), class:"item-red-btn"%>
     <% end %>
